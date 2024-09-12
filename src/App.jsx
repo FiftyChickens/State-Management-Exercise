@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import GameState from "./components/GameState";
+import Player from "./components/Player";
+import ParentComponent from "./components/Attack";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-
+      <h1>Space Battle Simulator</h1>
+      <ParentComponent />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
