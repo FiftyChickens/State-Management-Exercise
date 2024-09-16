@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Attack from "./Attack";
+import Attack from "./ParentComponent";
 
-const ChildComponent = ({ value }) => {
+const Health = ({ value }) => {
   function emojiStatus(health) {
     if (health < 1) {
       return <>☠️</>;
@@ -10,9 +10,9 @@ const ChildComponent = ({ value }) => {
     } else return <>💖</>;
   }
   return (
-    <p>
+    <>
       Health: {value} {emojiStatus(value)}
-    </p>
+    </>
   );
 };
-export default ChildComponent;
+export default Health;

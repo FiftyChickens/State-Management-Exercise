@@ -1,0 +1,10 @@
+#root {
+
+    display: grid;
+    grid-template-rows: 1fr 20fr 1fr;
+    /* adjust to the number of p elements */
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+    /* adjust to your desired height */
+}

@@ -1,0 +1,49 @@
+.player {
+    color: green;
+}
+
+.enemy {
+    color: red;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.attack:hover {
+    background-color: #cc7400;
+    border-color: #c50000;
+    color: black;
+}
+
+.attack {
+    width: 120px;
+    height: 120px;
+    color: #ffffff;
+    border: 10px solid #ff2727;
+    border-radius: 100%;
+    background-color: #ff9812;
+}
+
+.reset {
+    border-color: #ffffff;
+    background-color: transparent;
+    width: 120px;
+    height: 120px;
+    color: #ffffff;
+    border-radius: 100%;
+}
+
+.reset:hover {
+    background-color: rgb(37, 37, 37)
+}
+
+
+section {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

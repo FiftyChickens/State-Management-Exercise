@@ -1,25 +1,21 @@
-import { useState } from "react";
+import "./GameState.css";
 
 const GameState = ({ player, enemy }) => {
-  const [currentState, setCurrentState] = useState(0);
-
   function compareNumbers(player, enemy) {
     if (enemy < 1 && player < 1) {
-      return <p>It's a draw! 🤝 Both spacecraft have been neutralized.</p>;
+      return <>It's a draw! 🤝 Both sacecraft have been neutralized.</>;
     } else if (player > 1 && enemy < 1) {
       return (
-        <p>
-          Congratulations!, 💪 You've successfully defended your spacecraft.
-        </p>
+        <>Congratulations!, 💪 You've successfully defended your spacecraft.</>
       );
     } else if (player < 1 && enemy > 1) {
-      return <p>Mission Failed. 😵 Your spacecraft has been destroyed.</p>;
+      return <>Mission Failed. 😵 Your spacecraft has been destroyed.</>;
     } else {
-      return <p>Engage the Enemy 💥</p>;
+      return <>Engage the Enemy 💥</>;
     }
   }
 
-  return <>{compareNumbers(player, enemy)}</>;
+  return <p className="gameState">{compareNumbers(player, enemy)}</p>;
 };
 
 export default GameState;
